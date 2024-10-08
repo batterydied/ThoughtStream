@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs') %>
+<div class="textbox-container">
+    <form id="postForm" action="/update" method="POST">
+        <div class="form-container">
+            <div class="m-4 center">
+                <input name="blogTitle" class="title-box" type="text" value="<%= title %>" required></input>
+            </div>
+            <img id="cat-image" src="/images/cat.png">
+            <textarea name="blogContent" class="inputBox" required><%= content %></textarea>
+            <input type="hidden" name="index" value="<%= index %>">
+            <div class="center">
+                <button type="submit" class="btn btn-primary m-3">Update</button>
+            <div>
+        </div>
+    </form>
+</div>
+<%- include('./partials/footer.ejs') %>

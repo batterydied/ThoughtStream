@@ -1,0 +1,18 @@
+<%- include('./partials/header.ejs') %>
+<div class="side mt-4">
+  <div style="display: flex; align-items: center;">
+    <h1 class="blog-entries Fredoka mt-1">My Blobs</h1>
+    <a href="/post"><button type="submit" class="btn btn-primary btn-sm new-post mt-1 ms-3 Fredoka">New Post</button></a>
+  </div>
+  <div class="mt-3">
+    <ul class="no-list-styles">
+      <% for(let i = 0; i < posts.length; i++){ %>
+        <li class="mt-2 mb-2 Fredoka">
+          <button class="default-btn" data-index="<%= i %>">Delete</button>
+          <a class="ms-3 posts" href="/edit/<%= i %>" data-index="<%= i %>" data-title="<%= posts[i]["title"] %>"><%=posts[i]["title"]%></a>
+        </li>
+      <% } %>
+    </ul>
+  </div>
+</div>
+<%- include('./partials/footer.ejs') %>

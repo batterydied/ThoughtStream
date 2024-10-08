@@ -1,0 +1,16 @@
+<%- include('./partials/header.ejs') %>
+<div class="textbox-container">
+    <form id="postForm" action="/submit" method="POST">
+        <div class="form-container">
+            <div class="m-4 center">
+                <input name="blogTitle" class="title-box" type="text" placeholder="Enter the title of your blog post..." required></input>
+            </div>
+            <img id="cat-image" src="/images/cat.png">
+            <textarea name="blogContent" class="inputBox" placeholder="Type your content here..." required></textarea>
+            <div class="center">
+                <button type="submit" class="btn btn-primary m-3">Submit</button>
+            <div>
+        </div>
+    </form>
+</div>
+<%- include('./partials/footer.ejs') %>
