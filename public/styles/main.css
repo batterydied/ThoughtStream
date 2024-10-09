@@ -85,5 +85,11 @@ form {
     flex-direction: column;
     justify-content: center;
 }
-
+.thought-bubble{
+    position: absolute;
+    top: 12rem;
+    left: 60rem;
+    width: 28rem;
+    height: auto;
+}
 

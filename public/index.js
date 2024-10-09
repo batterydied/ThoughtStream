@@ -1,4 +1,5 @@
-const delButton = $(".delete-btn");
+
+const delButton = $(".default-btn");
 delButton.on("click", function(){
     const index = this.getAttribute("data-index");
     const toBeDeleted = $(`[data-index='${index}']`);
